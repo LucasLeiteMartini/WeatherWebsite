@@ -1,0 +1,34 @@
+[project]
+name = "weatherwebsite"
+version = "0.1.0"
+description = ""
+
+authors = [
+    {name = "Marcell Martini",email = "1556478+marcellmartini@users.noreply.github.com"}
+]
+
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "uvicorn (>=0.35.0,<0.36.0)"
+]
+
+[tool.poetry]
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.403"
+pylint = "^3.3.7"
+isort = "^6.0.1"
+black = "^25.1.0"
+pytest = "^8.4.1"
+httpx = "^0.28.1"
+bandit = "^1.8.6"
+pytest-cov = "^6.2.1"
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv", "__pycache__", ".pytest_cache"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
