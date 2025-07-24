@@ -1,5 +1,4 @@
 import os
-from re import search
 
 import httpx
 from dotenv import load_dotenv
