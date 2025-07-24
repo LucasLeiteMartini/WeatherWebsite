@@ -10,7 +10,7 @@ def test_read_main(client):
 
 
 def test_search_location(client):
-    response = client.post("/map/ufam")
+    response = client.post("/map/search/ufam")
 
     assert response.status_code == 200
     assert response.json() == {
